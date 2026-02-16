@@ -1,0 +1,11 @@
+# Dataset Directory
+
+Place the `Suicide_Detection.csv` file in this directory.
+
+Download from: https://www.kaggle.com/datasets/nikhilesharma/suicide-watch
+
+## File Requirements
+- Filename: `Suicide_Detection.csv`
+- Expected columns: `text`, `class`
+- Size: ~159 MB
+- Classes: `suicide`, `non-suicide`
