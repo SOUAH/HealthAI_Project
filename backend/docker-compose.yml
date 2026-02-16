@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  api:
+    build: ./backend
+    command: python main.py
+    ports:
+      - "5000:5000"
+  frontend:
+    build: ./backend
+    command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
